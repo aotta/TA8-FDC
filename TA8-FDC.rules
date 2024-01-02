@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6633)
+    (start_pass_no 5512)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -26,71 +26,71 @@
     )
   )
   (rule
-    (width 250.0)
+    (width 200.0)
     (clearance 200.2)
-    (clearance 125.0 (type smd_to_turn_gap))
+    (clearance 100.0 (type smd_to_turn_gap))
     (clearance 50.0 (type smd))
     (clearance 200.2 (type "kicad_default"))
   )
-  (padstack "Via[0-1]_800:400_um"
+  (padstack "Via[0-1]_600:300_um"
     (shape
-      (circle F.Cu 800.0 0.0 0.0)
+      (circle F.Cu 600.0 0.0 0.0)
     )
     (shape
-      (circle B.Cu 800.0 0.0 0.0)
+      (circle B.Cu 600.0 0.0 0.0)
     )
     (attach off)
   )
   (via 
-    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+    "Via[0-1]_600:300_um" "Via[0-1]_600:300_um" default
   )
   (via 
-    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+    "Via[0-1]_600:300_um-kicad_default" "Via[0-1]_600:300_um" "kicad_default"
   )
   (via_rule
-    default "Via[0-1]_800:400_um"
+    default "Via[0-1]_600:300_um"
   )
   (via_rule
-    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+    "kicad_default" "Via[0-1]_600:300_um-kicad_default"
   )
   (class default
     (clearance_class default)
     (via_rule default)
     (rule
-      (width 250.0)
+      (width 200.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
     )
   )
   (class "kicad_default"
-    +5V "Net-(D101-K)" "Net-(D101-A)" GND "Net-(IC105-Pad3)" "Net-(IC105-Pad13)" /A5 /~{WR}
-    "Net-(IC105-Pad10)" "Net-(IC103-Pad9)" /A7 /~{DACK2} "Net-(IC105-Pad11)" /~{RD} /A6 "Net-(IC103-Pad12)"
-    "Net-(IC105-Pad9)" /~{RESET} /A4 /drq /data7 "unconnected-(IC102A-Q-Pad5)" "Net-(IC103-Pad8)" "Net-(IC102A-C)"
-    "Net-(IC102A-~{R})" "Net-(IC105-Pad5)" "Net-(IC105-Pad4)" "Net-(IC105-Pad8)" /data6 "unconnected-(IC102B-~{Q}-Pad8)" "Net-(IC106A-O3)" "unconnected-(IC103-Pad6)"
-    "unconnected-(IC103-Pad5)" "unconnected-(IC103-Pad4)" "unconnected-(IC103-Pad3)" "unconnected-(IC103-Pad2)" /D7 "unconnected-(IC103-Pad1)" /D6 "Net-(IC104-Q3)"
-    /D5 "unconnected-(IC104-Q2-Pad11)" /D4 "unconnected-(IC104-Q1-Pad12)" /D3 "unconnected-(IC104-Q0-Pad13)" /D2 "Net-(IC106A-E)"
-    /D1 /D0 "Net-(IC108-Pad7)" "Net-(IC108-Pad6)" "Net-(IC108-Pad5)" /us1 "Net-(IC108-Pad3)" "Net-(IC108-Pad9)"
-    "Net-(IC106A-O2)" "Net-(IC109-Pad11)" /us0 "unconnected-(IC106A-O1-Pad5)" "Net-(IC109-Pad8)" "Net-(IC106B-O0)" "Net-(IC110-Pad5)" "Net-(IC110-Pad11)"
-    "Net-(IC110-Pad3)" "Net-(IC110-Pad9)" "unconnected-(IC106A-O0-Pad4)" "Net-(IC106B-O1)" "Net-(IC106B-O2)" "Net-(IC112-Pad8)" "Net-(IC109-Pad5)" /~{READY}
-    "Net-(IC106A-A0)" "/~{TRACK_0}" /~{INDEX} "Net-(IC106B-O3)" /~{PROTECT} "/~{READ_DATA}" /A0 /~{SIOR}
-    /~{IORQ} /~{TC} /~{SIOW} /A3 "Net-(IC107-~{G})" /data0 /data1 /DRQ2
-    /~{EXTINT1} /OUTDV2 /data2 "Net-(C105-Pad1)" /data3 "/~{MOTOR_ON}" /~{DRIVE1} /~{DRIVE2}
-    /~{DRIVE0} /data4 "/~{WRITE_DATA}" "/~{WRITE_GATE}" /~{DIRECTION} /~{SIDE} /~{STEP} /~{DRIVE3}
-    /data5 "Net-(IC107-DIR)" "unconnected-(IC112-Pad1)" "unconnected-(IC112-Pad2)" "unconnected-(IC112-Pad3)" "Net-(IC112-Pad5)" /~{dack} "unconnected-(J2-Pin_2-Pad2)"
-    "unconnected-(J2-Pin_4-Pad4)" "unconnected-(JCNB103-Pin_49-Pad49)" "unconnected-(JCNB103-Pin_48-Pad48)" "unconnected-(JCNB103-Pin_42-Pad42)" "unconnected-(JCNB103-Pin_41-Pad41)" "unconnected-(JCNB103-Pin_40-Pad40)" "unconnected-(JCNB103-Pin_39-Pad39)" "unconnected-(JCNB103-Pin_38-Pad38)"
-    "unconnected-(JCNB103-Pin_37-Pad37)" "unconnected-(JCNB103-Pin_36-Pad36)" "unconnected-(JCNB103-Pin_35-Pad35)" "unconnected-(JCNB103-Pin_34-Pad34)" "unconnected-(JCNB103-Pin_33-Pad33)" "unconnected-(JCNB103-Pin_29-Pad29)" "unconnected-(JCNB103-Pin_28-Pad28)" "unconnected-(JCNB103-Pin_27-Pad27)"
-    "unconnected-(JCNB103-Pin_26-Pad26)" "unconnected-(JCNB103-Pin_25-Pad25)" "unconnected-(JCNB103-Pin_23-Pad23)" "unconnected-(JCNB103-Pin_21-Pad21)" "unconnected-(JCNB103-Pin_18-Pad18)" "unconnected-(JCNB103-Pin_14-Pad14)" "unconnected-(JCNB103-Pin_13-Pad13)" "unconnected-(JCNB103-Pin_11-Pad11)"
-    "Net-(LED1-A)" "unconnected-(RA105-R7-Pad8)" "unconnected-(RA105-R8-Pad9)" "unconnected-(RA106-R7-Pad8)" "unconnected-(RA107-R6-Pad7)" "unconnected-(RA107-R7-Pad8)" "unconnected-(RA106-R8-Pad9)" "Net-(IC120-RESET)"
-    "Net-(IC120-INT)" "Net-(IC120-RW{slash}SEEK)" "Net-(IC120-WPRT)" "Net-(IC120-STEP)" "Net-(IC120-LCT{slash}DIR)" "Net-(IC120-TC)" "Net-(IC120-~{WR})" "Net-(IC120-TRK0)"
-    "Net-(IC120-INDEX)" "Net-(IC120-READY)" "Net-(IC120-SIDE)" "Net-(IC120-WE)" "Net-(IC120-WDATA)" "Net-(IC120-A0)" "unconnected-(IC120-PS1-Pad31)" "unconnected-(IC120-PS0-Pad32)"
-    "unconnected-(IC120-HLD-Pad36)" "Net-(IC101-CR)" "Net-(IC101-OFFSET)" "Net-(IC101-XD)" "Net-(IC101-CONTROL)" "Net-(IC101-XG)" "Net-(IC101-CLK1)" "Net-(IC101-MIN{slash}~{STD})"
-    "Net-(IC101-SYNC)" "Net-(IC101-RD_DATA)" "Net-(IC101-WINDOW)" "Net-(IC101-DATA)" "Net-(IC101-MFM{slash}~{FM})" "Net-(IC101-LPF1)" "Net-(IC101-LPF2)" "unconnected-(IC101-Test1-Pad18)"
-    "Net-(IC101-WCLK)" "unconnected-(IC101-CLK2-Pad21)" "Net-(IC101-~{TRIG_IN})" "Net-(IC101-TM_OUT)" +12V
+    +5V "Net-(D1-A)" "Net-(D1-K)" GND "Net-(IC105-Pad3)" "Net-(IC105-Pad13)" /A5 /~{WR}
+    "Net-(IC105-Pad10)" "Net-(IC103-Pad9)" /A7 /~{DACK2} "Net-(IC105-Pad11)" /~{RD} /A6 "Net-(IC105-Pad9)"
+    /~{RESET} /A4 /drq /data7 "unconnected-(IC102A-Q-Pad5)" "Net-(IC103-Pad8)" "Net-(IC102A-C)" "Net-(IC102A-~{R})"
+    "Net-(IC105-Pad4)" "Net-(IC105-Pad8)" /data6 "unconnected-(IC102B-~{Q}-Pad8)" "Net-(IC106A-O3)" "unconnected-(IC103-Pad6)" "unconnected-(IC103-Pad5)" "unconnected-(IC103-Pad4)"
+    "unconnected-(IC103-Pad3)" "unconnected-(IC103-Pad2)" "unconnected-(IC103-Pad1)" "Net-(IC104-Q3)" "unconnected-(IC104-Q2-Pad11)" "unconnected-(IC104-Q1-Pad12)" "unconnected-(IC104-Q0-Pad13)" "Net-(IC106A-E)"
+    "Net-(IC108-Pad7)" "Net-(IC108-Pad6)" "Net-(IC108-Pad5)" /us1 "Net-(IC108-Pad3)" "Net-(IC108-Pad9)" "Net-(IC106A-O2)" "Net-(IC109-Pad11)"
+    /us0 "unconnected-(IC106A-O1-Pad5)" "Net-(IC109-Pad8)" "Net-(IC106B-O0)" "Net-(IC110-Pad5)" "Net-(IC110-Pad11)" "Net-(IC110-Pad3)" "Net-(IC110-Pad9)"
+    "unconnected-(IC106A-O0-Pad4)" "Net-(IC106B-O1)" "Net-(IC106B-O2)" "Net-(IC112-Pad8)" "Net-(IC109-Pad5)" /~{READY} "Net-(IC106A-A0)" "/~{TRACK_0}"
+    /~{INDEX} "Net-(IC106B-O3)" /~{PROTECT} "/~{READ_DATA}" /~{SIOR} /~{IORQ} /~{TC} /~{SIOW}
+    /A3 "Net-(IC107-~{G})" /data0 /data1 /DRQ2 /~{EXTINT1} /OUTDV2 /data2
+    "Net-(C105-Pad1)" /data3 "/~{MOTOR_ON}" /~{DRIVE1} /~{DRIVE2} /~{DRIVE0} /data4 "/~{WRITE_DATA}"
+    "/~{WRITE_GATE}" /~{DIRECTION} /~{SIDE} /~{STEP} /~{DRIVE3} /data5 "Net-(IC107-DIR)" "Net-(IC112-Pad5)"
+    /~{dack} "unconnected-(J2-Pin_2-Pad2)" "unconnected-(J2-Pin_4-Pad4)" "unconnected-(JCNB103-Pin_49-Pad49)" "unconnected-(JCNB103-Pin_48-Pad48)" "unconnected-(JCNB103-Pin_42-Pad42)" "unconnected-(JCNB103-Pin_41-Pad41)" "unconnected-(JCNB103-Pin_40-Pad40)"
+    "unconnected-(JCNB103-Pin_39-Pad39)" "unconnected-(JCNB103-Pin_38-Pad38)" "unconnected-(JCNB103-Pin_37-Pad37)" "unconnected-(JCNB103-Pin_36-Pad36)" "unconnected-(JCNB103-Pin_35-Pad35)" "unconnected-(JCNB103-Pin_34-Pad34)" "unconnected-(JCNB103-Pin_33-Pad33)" "unconnected-(JCNB103-Pin_29-Pad29)"
+    "unconnected-(JCNB103-Pin_28-Pad28)" "unconnected-(JCNB103-Pin_27-Pad27)" "unconnected-(JCNB103-Pin_26-Pad26)" "unconnected-(JCNB103-Pin_25-Pad25)" "unconnected-(JCNB103-Pin_23-Pad23)" "unconnected-(JCNB103-Pin_21-Pad21)" "unconnected-(JCNB103-Pin_18-Pad18)" "unconnected-(JCNB103-Pin_14-Pad14)"
+    "unconnected-(JCNB103-Pin_13-Pad13)" "unconnected-(JCNB103-Pin_11-Pad11)" "Net-(LED1-A)" "unconnected-(RA105-R7-Pad8)" "unconnected-(RA105-R8-Pad9)" "unconnected-(RA106-R7-Pad8)" "unconnected-(RA107-R6-Pad7)" "unconnected-(RA107-R7-Pad8)"
+    "unconnected-(RA106-R8-Pad9)" "Net-(IC120-RESET)" "Net-(IC120-INT)" "Net-(IC120-RW{slash}SEEK)" "Net-(IC120-WPRT)" "Net-(IC120-STEP)" "Net-(IC120-LCT{slash}DIR)" "Net-(IC120-TC)"
+    "Net-(IC120-~{WR})" "Net-(IC120-TRK0)" "Net-(IC120-INDEX)" "Net-(IC120-READY)" "Net-(IC120-SIDE)" "Net-(IC120-WE)" "Net-(IC120-WDATA)" "Net-(IC120-A0)"
+    "unconnected-(IC120-PS1-Pad31)" "unconnected-(IC120-PS0-Pad32)" "unconnected-(IC120-HLD-Pad36)" "Net-(IC101-CR)" "Net-(IC101-OFFSET)" "Net-(IC101-XD)" "Net-(IC101-CONTROL)" "Net-(IC101-XG)"
+    "Net-(IC101-CLK1)" "Net-(IC101-MIN{slash}~{STD})" "Net-(IC101-SYNC)" "Net-(IC101-RD_DATA)" "Net-(IC101-WINDOW)" "Net-(IC101-DATA)" "Net-(IC101-MFM{slash}~{FM})" "Net-(IC101-LPF1)"
+    "Net-(IC101-LPF2)" "unconnected-(IC101-Test1-Pad18)" "Net-(IC101-WCLK)" "unconnected-(IC101-CLK2-Pad21)" "Net-(IC101-~{TRIG_IN})" "Net-(IC101-TM_OUT)" +12V /toIORQ
+    "Net-(IC110-Pad8)" /D0 /D1 /D2 /D3 /D4 /D5 /D6
+    /D7 /A0 "Net-(IC103-Pad12)"
     (clearance_class "kicad_default")
     (via_rule "kicad_default")
     (rule
-      (width 250.0)
+      (width 200.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
